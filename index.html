@@ -15,15 +15,37 @@
       border: 5px bold black;
       padding:5px;
     }
+
+    h1 {
+        text-align: center;
+        padding: 30px;
+    }
+    #container{
+        background-color: lavender;
+        padding: 40px;
+    }
+
+    .container{
+        background-color: lightsteelblue;
+        padding: 20px;
+    }
+    
+
 </style>
 <body>
+    <div class="container">
+    
     <h1>Crystal Collector</h1>
-    <h2>Number to Guess: <span id="number-to-guess"></span></h2>
-    <div id ="wins">Wins:</div>
-    <div id ="losses">Losses:</div>
+</div>
+    <h4><strong> Number to Guess: </strong><span id="number-to-guess"></span></h4>
+    <div id ="wins"><strong>Wins:</strong></div>
+    <div id ="losses"><strong>Losses:</strong></div>
     <div id="crystals"></div> 
-    <div id ="random">Random Number:</div>
-    <div id ="total">Total:</div>
+    
+    <h4><div id ="total">Total:</div></h4>
+    <div id="container"></div>
+      </div>
+    
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
    
