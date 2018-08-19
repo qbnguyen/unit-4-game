@@ -39,6 +39,7 @@ $(document).ready(function () {
             $("#wins").text("Wins: " + totalWins)
             alert("You win!!!");
             reset();
+            
         }
 
         else if (total >= numberToGuess) {
@@ -46,16 +47,19 @@ $(document).ready(function () {
             $("#losses").text("Losses: " + totalLosses)
             alert("Boooo!")
             reset();
+            
+            
         }
         
         function reset() {
             TotalScore= 0;
-            
+            $("#container").text(0);
             console.log("clear")
         }
 
         
     })
+   
 })
 
 
