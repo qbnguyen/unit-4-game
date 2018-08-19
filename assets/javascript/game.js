@@ -1,10 +1,12 @@
 
 $(document).ready(function () {
+    
     var numberToGuess = Math.floor(Math.random() * 31) + 90;
     //generate random number 
     $("#number-to-guess").text(numberToGuess);
 
     console.log("computer pick " + numberToGuess);
+    
     //assign each button a random value, be sure to hide the value 
 
     // var crystalRandomNumber = Math.floor(Math.random() * 12) + 1;
@@ -36,17 +38,23 @@ $(document).ready(function () {
             totalWins++;
             $("#wins").text("Wins: " + totalWins)
             alert("You win!!!");
-
+            reset();
         }
 
         else if (total >= numberToGuess) {
             totalLosses++;
             $("#losses").text("Losses: " + totalLosses)
             alert("Boooo!")
-
-
+            reset();
+        }
+        
+        function reset() {
+            TotalScore= 0;
+            
+            console.log("clear")
         }
 
+        
     })
 })
 
